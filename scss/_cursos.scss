@@ -1,0 +1,25 @@
+.tituloCard{
+    @include estiloCard();
+    animation: slideinU
+}
+
+.precioCard{    
+    @include estiloCard();
+}
+
+.botonCard{ 
+    margin-left: 85px;
+    font-weight: bolder;
+}
+
+.botonCard:hover{
+    background-color: $negro;
+}
+
+.imagenCard:hover{
+    opacity: .8;
+}
+
+.itemCompra{
+    margin-bottom: 40px;
+}

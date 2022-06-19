@@ -1,0 +1,16 @@
+.seccion-primera{
+    height: 550px;
+    background: url(../img/impresion3d.jpeg) no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin: 5px 0px 5px 0px;
+}
+
+.text-color{
+    background-color: $negro;
+    text-align: center;
+}

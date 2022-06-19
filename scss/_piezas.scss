@@ -1,0 +1,47 @@
+.cardPosition{
+    padding: 22px;
+}
+
+.piezasImpresas{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.parrafoPiezas{
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    line-height: 2;
+}
+
+
+.linkForm{
+    text-decoration: underline;
+    color: $formColor;
+}
+
+.linkForm:hover{
+    color: $formHover;
+}
+
+.piezaFilamento{
+    width: 590px;
+    height: 287px;
+    padding: 20px;
+}
+
+.tituloPiezas{
+    margin: 50px 0px 0px 30px;
+    text-align: center;
+}
+.tituloPiezas2{
+    text-align: center;
+}
+.tituloPiezas3{
+    text-align: center;
+}
+
+.carousel{
+    margin: 30px 0px;
+}

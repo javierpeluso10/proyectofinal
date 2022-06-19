@@ -1,0 +1,54 @@
+.contenedorImpresion3d{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.texto{
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.textoImpresion3d{
+    text-align: justify;
+    margin: 0px 10px 50px 20px;
+}
+
+.nav ul.nav-menu.show{
+    transform: translateX(-5px);
+}
+
+.tipos3ds{
+    width: 250px;
+    height: 250px;
+}
+.contenedorFotos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.tiposDeImpresoras{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.tipos-de-impresoras{
+    background:url(../img/tipodeimpresora.jpeg) no-repeat center center/cover;
+    height: 250px;
+    margin:5px 0px 5px 0px;
+    display: flex;
+    align-items:flex-end;
+    padding-left: 10px;
+}
+.tipos-de-impresoras__div{
+    margin-bottom: 50px;
+}
+
+.texto-impresoras{
+    background-color: $negro;
+    display: inline;
+}
+.texto-impresoras__p{
+    background-color: $negro;
+}

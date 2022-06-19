@@ -1,0 +1,11 @@
+@mixin global{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+@mixin estiloCard{
+        text-align: center;
+        font-weight: bold;
+}

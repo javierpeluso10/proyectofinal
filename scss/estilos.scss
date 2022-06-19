@@ -1,0 +1,18 @@
+@import "global";
+@import "colores";
+@import "nav";
+@import "section1";
+@import "piezas";
+@import "cursos";
+@import "footer";
+@import "impresion3d";
+@import "form";
+@import "body";
+@import "mediasquery";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+ * {
+    @include global();
+}

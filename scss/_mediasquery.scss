@@ -1,0 +1,287 @@
+/*MEDIAS QUERY*/
+@media (max-width: 1200px){
+    .piezaFilamento{
+        width: 442px;
+        height: 216px;
+        padding: 10px;
+        margin: 0px auto;
+    }
+    .imagencita{
+        text-align: center;
+    }
+    .contenedorImpresion3d{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px){
+    .imagencita{
+        text-align: center;
+    }
+    .parrafoPiezas{
+        padding: 10px;
+        text-align: center;
+        line-height: 2;
+    }
+    .contenedorImpresion3d{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 865px) {
+    .nav ul.nav-menu{
+        display:block;
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-400px); /*-5*/
+        padding: 30px;
+        opacity: .9;
+        background-color: #4d4c4c;
+        z-index: 3;
+        transition: transform .5s ease-in-out;
+    }
+    .logo{
+        margin-top: -15px;
+    }
+    .menu-btn{
+        margin: 5px;
+        display: block;
+    }
+    .btn-search{
+        margin: 5px 60px;
+    }
+    .contenedorImpresion3d{
+        grid-template-columns: 1fr;
+    }
+    .texto{
+        width: 95%;
+        text-align: justify;
+    }
+    .video-youtube{
+        width: 500px;
+        height: 300px;
+    }
+    .form{
+        margin: auto;
+        width: 600px;
+    }
+}  
+@media (max-width: 768px){
+    .menu-btn{
+        margin: 5px;
+    }
+    .btn-search{
+        margin: 5px 60px;
+    }
+    .imagencita{
+        text-align: center;
+    }
+    .parrafoPiezas{
+        padding: 10px;
+        text-align: center;
+        line-height: 2;
+        margin-left: 60px;
+    }
+}
+@media (max-width: 600px){
+    .menu-btn{
+        margin: 5px;
+    }
+    .btn-search{
+        margin: 5px 60px;
+    }
+    .form{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 528px) {
+    .nav ul.nav-menu{
+        display:block;
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-250px); /*-25*/
+        padding: 20px;
+        opacity: .9;
+        background-color: #4d4c4c;
+        z-index: 3;
+        transition: transform .5s ease-in-out;
+    }
+    .logo{
+        margin-top: -20px;
+    }
+    .menu-btn{
+        margin: 5px;
+    }
+    .btn-search{
+        margin: 5px 60px;
+    }
+    .cardPosition{
+        width: fit-content;
+        margin: auto;
+    }
+    .contenedorImpresion3d{
+        grid-template-columns: 1fr;
+    }
+    .texto{
+        width: 95%;
+        padding: 15px;
+        text-align: justify;
+    }
+    .video-youtube{
+        width: 300px;
+        height: 300px;
+    }
+    .imgCarrousel{
+        width: 300px;
+        height: 300px;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+    .form{
+        margin: auto;
+        width: 400px;
+    }
+    .imagencita{
+        text-align: center;
+    }
+    .tituloPiezas{
+        margin:50px 0 0 10px;
+        text-align: center;
+        text-decoration: underline;
+    }
+} 
+
+@media (max-width: 515px){
+    .menu-btn{
+        margin: 5px;
+    }
+    .btn-search{
+        margin: 5px 60px;
+    }
+    .contenedorFotos{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .tipos3ds{
+        margin: auto;
+        padding: 40px;
+        height: 400px;
+        width: 400px;
+    }
+    .botonForm{
+        margin-bottom: 20px;
+    }
+    .imagencita{
+        text-align: center;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 454px){
+    .menu-btn{
+        margin: 5px;
+    }
+    .btn-search{
+        margin: 5px 60px;
+    }
+        .imagencita{
+            text-align: center;
+        }
+        .piezaFilamento{
+            width: 295px;
+            height: 144px;
+        }
+    .parrafoPiezas{
+        padding: 10px;
+        text-align: center;
+        line-height: 2;
+        margin-left: 35px;
+    }
+}
+
+
+@media (max-width: 390px){
+    .menu-btn{
+        margin: 5px;
+    }
+    .btn-search{
+        margin: 5px 60px;
+    }
+    .texto{
+        width: 320px;
+        margin: auto;
+    }
+    .tipos3ds{
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .piezasImpresas{
+        margin-top: 20px;
+        
+    }
+    .imagencita{
+        text-align: center;
+    }
+    .piezaFilamento{
+        width: 295px;
+        height: 144px;
+    }
+    .parrafoPiezas{
+        padding: 10px;
+        text-align: center;
+        line-height: 2;
+        margin-left: 30px;
+    }
+    .imgCarrousel{
+        height: 200px;
+        width: 200px;
+    }
+    .footer{
+    margin-top: 30px;
+    }
+
+    .form{
+        width: 320px;
+    }
+    .botonForm{
+        margin-right: 90px;
+    }
+}
+
+@media (max-width: 320px){
+    .menu-btn{
+        margin: 5px;
+    }
+    .btn-search{
+        margin: 5px 60px;
+    }
+    .form{
+        width: 300px;
+    }
+    .botonForm{
+        margin:20px;
+    }
+    .piezaFilamento{
+        width: 294px;
+        height: 144px;
+        margin: 0;
+    }
+    .parrafoPiezas{
+        padding: 10px;
+        text-align: center;
+        line-height: 2;
+        margin-left: 30px;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+}

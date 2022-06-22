@@ -230,7 +230,7 @@ ul {
 }
 
 .category_list .ct_item-active {
-  background: #2D3E50;
+  background: #e98e059c;
 }
 
 /* PRODUCTOS ============*/
@@ -507,7 +507,6 @@ ul {
 
 h1 {
   margin-bottom: 20px;
-  text-decoration: underline;
 }
 
 h2 {

@@ -84,8 +84,35 @@ ul {
   text-align: center;
 }
 
-.cardPosition {
-  padding: 22px;
+.buttonInicio {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+.buttonInicio:hover {
+  -webkit-animation: pulsate 1s ease-in-out;
+          animation: pulsate 1s ease-in-out;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+            box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+            box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+
+.carrousel {
+  width: 70%;
 }
 
 .piezasImpresas {
@@ -165,10 +192,6 @@ ul {
 .botonFiltro {
   text-align: end;
   padding: 0px 30px;
-}
-
-.contenedorCursos {
-  margin-left: 0px;
 }
 
 .wrap {
@@ -468,7 +491,7 @@ ul {
 }
 
 .tipos-de-impresoras__div {
-  margin-bottom: 50px;
+  margin: 0 0 50px 25px;
 }
 
 .texto-impresoras {
@@ -504,6 +527,16 @@ ul {
   text-decoration: none;
 }
 
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 h1 {
   margin-bottom: 20px;
 }
@@ -528,6 +561,7 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 17px;
   color: #ffffff;
+  letter-spacing: .5px;
 }
 
 /*MEDIAS QUERY*/

@@ -1,33 +1,7 @@
-.tituloCard{
-    @include estiloCard();
-}
-
-.precioCard{    
-    @include estiloCard();
-}
-
-.botonCard{
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.botonCard:hover{
-    background-color: $negro;
-}
-
-.imagenCard{
-    padding: 10px;
-}
-
-.imagenCard:hover{
-    opacity: .8;
-}
-
-
-.botonFiltro{
-    text-align: end;
-    padding: 0px 30px;
+.imgCursos{
+	width: 286px;
+	height: 286px;
+	padding: 10px;
 }
 
 .wrap{
@@ -36,21 +10,42 @@
 	margin: auto;
 }
 
-.wrap > h1{
-	color: $texto;
-	font-weight: 400;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin: 15px 0px;
+.products-list{
+	display: grid;
+	grid-template-columns: 285px 285px 285px;
+	gap:16px;
 }
 
-.wrap > h1:after{
-	content: '';
-	width: 100%;
-	height: 1px;
-	background: #C7C7C7;
-	margin: 20px 0;
+.tituloCurso{
+	color: $negro;
+	text-align: center;
+	font-size: 17px;
+}
+
+.precioCurso{
+	color: $negro;
+	text-align: center;
+	font-weight: bolder;
+}
+.botonCompra{
+	margin: 15px 0;
+	padding: 8px;
+	border-radius: 10px;
+	background-color: $fondoCard;
+	width: 200px;
+	border: solid 1px $fondoCard;
+	font-weight: bolder;
+}
+
+.botonCompra:hover{
+	background-color: $bordeForm;
+}
+.product-item{
+	background-color: $texto;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .store-wrapper{
@@ -80,20 +75,3 @@
 	background: #e98e059c;
 }
 
-.products-list{
-	width: 82%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-
-.products-list .product-item{
-	width: 22%;
-	margin-left: 3%;
-	margin-bottom: 25px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-self: flex-start;
-	transition: all .4s;
-}

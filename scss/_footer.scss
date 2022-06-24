@@ -20,13 +20,15 @@
     background-color: $footerColor;
     margin-top: 20px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
 }
 
 .copy p{
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
     color: $copyrightColor;
+    align-self:center;
+    margin-top: 20px;
 }
 
 .icons {

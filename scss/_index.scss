@@ -33,3 +33,39 @@
         0 0 50px #4e00c2;
     }
 }
+
+
+.tarjetasIndex{
+    display: grid;
+    grid-template-columns: 221px 221px 221px 221px;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    margin: 10px 0;
+}
+.tarjetasImg{
+    border: solid 1px $negro;
+    border-radius: 20px;
+}
+.contenidoCard{
+    background-color: $fondoCard;
+    padding: 10px;
+    border-radius: 0 0 20px 20px; 
+}
+
+.imgCard{
+    border-radius: 20px 20px 0 0;
+}
+
+.buttonCard{
+    color: $texto;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    background-color: $negro
+}
+
+.buttonCard:hover{
+    box-shadow:
+        0 0 15px $fondoCard,
+        0 0 15px $negro;
+}

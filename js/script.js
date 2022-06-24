@@ -12,7 +12,7 @@ $(document).ready(function(){
 	// FILTRANDO PRODUCTOS 
 
 	$('.category_item').click(function(){
-		var catProduct = $(this).attr('category');
+		let catProduct = $(this).attr('category');
 		console.log(catProduct);
 
 		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO

@@ -52,26 +52,50 @@
     <!--Fin del Nav-->
     <!--Comienzo Form-->
     <main>
-        <form class="form formulario">
-            <div>
-                <h1 class="contacto">Contactanos:</h1>
+        <div class="content">
+            <div class="contact-wrapper animate__animated animate__backInUp">
+                <div class="contact-form">
+                    <h3>Contactanos</h3>
+                    <form action="">
+                        <p>
+                            <label>Nombre y Apellido</label>
+                            <input type="text" name="Nombre">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Telefono</label>
+                            <input type="number" name="telefono">
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text" name="asunto">
+                        </p>
+                        <p class="block">
+                           <label>Mensaje</label> 
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button>
+                                Enviar
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Mas Informacion</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina.</li>
+                        <li><i class="fas fa-phone"></i> +54 1138834888</li>
+                        <li><i class="fas fa-envelope-open-text"></i> javier.peluso@hotmail.com</li>
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6570.014559650281!2d-58.4086046346398!3d-34.57868235099037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1656075732462!5m2!1ses!2sar" width="240" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                </div>
             </div>
-            <div class="mb-3 mx-auto w-50">
-                <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3 mx-auto w-50">
-                <label for="exampleInputPassword1" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 mx-auto w-50">
-                <label for="exampleFormControlTextarea1" class="form-label">Dejanos Tu Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="botonForm">
-                <button type="submit" class="btn btn-secondary ">Enviar</button>
-            </div>
-        </form>
+    
+        </div>
     </main>
     <hr>
     <!--Fin Form-->

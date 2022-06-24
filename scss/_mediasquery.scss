@@ -34,6 +34,10 @@
     .contenedorImpresion3d{
         grid-template-columns: 1fr;
     }
+    .cardPosition{
+        margin-bottom: 10px;
+        
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -60,6 +64,10 @@
 	.products-list .product-item:nth-child(3n+1){
 		margin-left: 0px;
 	}
+    .cardPosition{
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media (max-width: 865px) {
@@ -101,6 +109,9 @@
         margin: auto;
         width: 600px;
     }
+    .cardPosition{
+        margin-bottom: 10px;
+    }
 }  
 @media (max-width: 768px){
     .menu-btn{
@@ -118,6 +129,9 @@
         line-height: 2;
         margin-left: 60px;
     }
+    .cardPosition{
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -128,8 +142,36 @@
 		width: 100%;
 		margin-bottom: 10px;
 	}
-}
+    .cardPosition{
+        margin-bottom: 10px;
+    }
+    
 
+}
+@media(min-width: 700px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: center;
+    }
+    
+    .content{
+            max-width: 1100px;
+            width: 90%;
+            margin: auto;
+    }
+    .cardPosition{
+        margin-bottom: 10px;
+    }
+    
+}
 @media (max-width: 600px){
     .menu-btn{
         margin: 5px;
@@ -151,8 +193,15 @@
 	.products-list .product-item:nth-child(2n+1){
 		margin-left: 0px;
 	}
+    .cardPosition{
+        margin-bottom: 10px;
+    }
 }
-
+@media (max-width: 574px){
+    .cardPosition{
+        margin-left: 140px;
+    }
+}
 @media (max-width: 528px) {
     .nav ul.nav-menu{
         display:block;
@@ -179,6 +228,7 @@
     .cardPosition{
         width: fit-content;
         margin: auto;
+        margin-bottom: 10px;
     }
     .contenedorImpresion3d{
         grid-template-columns: 1fr;
@@ -239,6 +289,9 @@
     .footer{
         margin-top: 30px;
     }
+    .cardPosition{
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 454px){
@@ -260,6 +313,9 @@
         text-align: center;
         line-height: 2;
         margin-left: 35px;
+    }
+    .cardPosition{
+        margin-bottom: 10px;
     }
 }
 
@@ -312,6 +368,9 @@
     .botonForm{
         margin-right: 90px;
     }
+    .cardPosition{
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width: 350px){
 	.products-list .product_item{
@@ -345,5 +404,8 @@
     }
     .footer{
         margin-top: 30px;
+    }
+    .cardPosition{
+        margin-bottom: 10px;
     }
 }

@@ -131,11 +131,11 @@ ul {
 
 .linkForm {
   text-decoration: underline;
-  color: #f1e153;
+  color: #e48e0d;
 }
 
 .linkForm:hover {
-  color: #c07e04;
+  color: #f5b33a;
 }
 
 .piezaFilamento {
@@ -503,31 +503,92 @@ ul {
   background-color: #000000;
 }
 
-.botonForm {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
 }
 
-.form {
-  margin: auto;
-  width: 900px;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.contacto {
+.logo {
   text-align: center;
-  margin-bottom: 40px;
-  text-decoration: none;
+  font-size: 3em;
 }
 
-.formulario {
+.logo span {
+  color: #B70E21;
+}
+
+.contact-wrapper {
+  -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: #222222;
+}
+
+.contact-form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form .block {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #e48e0d;
+}
+
+.contact-form form button {
+  background: #e48e0d;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #f5b33a;
+  color: #fff;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+.contact-info {
+  background: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,6 +596,20 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.mapa {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 h1 {
@@ -603,6 +678,9 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .cardPosition {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -630,6 +708,9 @@ body {
   }
   .products-list .product-item:nth-child(3n+1) {
     margin-left: 0px;
+  }
+  .cardPosition {
+    margin-bottom: 10px;
   }
 }
 
@@ -678,6 +759,9 @@ body {
     margin: auto;
     width: 600px;
   }
+  .cardPosition {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -696,6 +780,9 @@ body {
     line-height: 2;
     margin-left: 60px;
   }
+  .cardPosition {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -707,6 +794,34 @@ body {
   }
   .category_list .category_item {
     width: 100%;
+    margin-bottom: 10px;
+  }
+  .cardPosition {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 700px) {
+  .contact-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: center;
+  }
+  .content {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+  }
+  .cardPosition {
     margin-bottom: 10px;
   }
 }
@@ -729,6 +844,15 @@ body {
   }
   .products-list .product-item:nth-child(2n+1) {
     margin-left: 0px;
+  }
+  .cardPosition {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 574px) {
+  .cardPosition {
+    margin-left: 140px;
   }
 }
 
@@ -765,6 +889,7 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
+    margin-bottom: 10px;
   }
   .contenedorImpresion3d {
     -ms-grid-columns: 1fr;
@@ -828,6 +953,9 @@ body {
   .footer {
     margin-top: 30px;
   }
+  .cardPosition {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 454px) {
@@ -849,6 +977,9 @@ body {
     text-align: center;
     line-height: 2;
     margin-left: 35px;
+  }
+  .cardPosition {
+    margin-bottom: 10px;
   }
 }
 
@@ -897,6 +1028,9 @@ body {
   .botonForm {
     margin-right: 90px;
   }
+  .cardPosition {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -932,6 +1066,9 @@ body {
   }
   .footer {
     margin-top: 30px;
+  }
+  .cardPosition {
+    margin-bottom: 10px;
   }
 }
 

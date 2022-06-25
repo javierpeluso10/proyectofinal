@@ -1,11 +1,3 @@
-// BOTON RESPONSIVE
-	document.querySelector('.menu-btn').addEventListener('click',() => {
-		document.querySelector('.nav-menu').classList.toggle('show');
-	});
-
-	
-//TIENDA CURSOS
-
 $(document).ready(function(){
 
 	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE

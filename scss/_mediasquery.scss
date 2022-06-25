@@ -73,13 +73,13 @@
 }
 
 @media (max-width: 865px) {
-    .nav ul.nav-menu{
+    .nav ul.navMenu{
         display:block;
         position: absolute;
         top:0;
         left: 0;
         height: 100%;
-        transform: translateX(-400px); /*-5*/
+        transform: translateX(-400px);
         padding: 30px;
         opacity: .9;
         background-color: #4d4c4c;
@@ -89,7 +89,7 @@
     .logo{
         margin-top: -15px;
     }
-    .menu-btn{
+    .menuBtn{
         margin: 5px;
         display: block;
     }
@@ -105,7 +105,7 @@
     }
 }  
 @media (max-width: 768px){
-    .menu-btn{
+    .menuBtn{
         margin: 5px;
     }
     .btn-search{
@@ -156,7 +156,7 @@
     }
 }
 @media (max-width: 600px){
-    .menu-btn{
+    .menuBtn{
         margin: 5px;
     }
     .btn-search{
@@ -175,7 +175,7 @@
 }
 
 @media (max-width: 528px) {
-    .nav ul.nav-menu{
+    .nav ul.navMenu{
         display:block;
         position: absolute;
         top:0;
@@ -191,7 +191,7 @@
     .logo{
         margin-top: -20px;
     }
-    .menu-btn{
+    .menuBtn{
         margin: 5px;
     }
     .btn-search{
@@ -226,7 +226,7 @@
 } 
 
 @media (max-width: 515px){
-    .menu-btn{
+    .menuBtn{
         margin: 5px;
     }
     .btn-search{
@@ -248,7 +248,7 @@
 }
 
 @media (max-width: 454px){
-    .menu-btn{
+    .menuBtn{
         margin: 5px;
     }
     .btn-search{
@@ -268,7 +268,7 @@
 
 
 @media (max-width: 390px){
-    .menu-btn{
+    .menuBtn{
         margin: 5px;
     }
     .btn-search{
@@ -306,7 +306,7 @@
 
 }
 @media (max-width: 320px){
-    .menu-btn{
+    .menuBtn{
         margin: 5px;
     }
     .btn-search{

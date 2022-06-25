@@ -2,13 +2,16 @@ a{
     color: $texto;
     text-decoration: none;
 }
+
 a:hover{
     color: $navHover;
     font-weight: bolder;
 }
+
 i{
     cursor: pointer;
 }
+
 .logo{
     width: 80px;
     height: 60px;
@@ -43,7 +46,7 @@ ul{
     }
 }
 
-.menu-btn{
+.menuBtn{
     position: absolute;
     cursor: pointer;
     top: 15px;

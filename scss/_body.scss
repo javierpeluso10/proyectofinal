@@ -5,15 +5,7 @@ h1{
 h2{
     margin-bottom: 10px;
 }
-.menu-btn{
-    position: absolute;
-    cursor: pointer;
-    top: 15px;
-    right: 30px;
-    z-index: 2;
-    font-size: 1.5rem;
-    display: none;
-}
+
 body{
     background-color: $fondo;
     font-family: 'Dosis', sans-serif;

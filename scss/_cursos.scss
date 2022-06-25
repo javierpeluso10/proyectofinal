@@ -1,19 +1,55 @@
-.imgCursos{
-	width: 286px;
-	height: 286px;
-	padding: 10px;
-}
 
-.wrap{
+.tienda{
 	max-width: 1100px;
 	width: 90%;
 	margin: auto;
 }
 
-.products-list{
+.tiendaCurso{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.listaCategoria{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+
+.listaCategoria .listaCursos{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: $footerColor;
+
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.listaCategoria .ct_item-active{
+	background: #e98e059c;
+}
+
+.listaProductos{
 	display: grid;
 	grid-template-columns: 285px 285px 285px;
-	gap:16px;
+	gap:10px;
+}
+
+.tipoCurso{
+	background-color: $texto;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.imgCursos{
+	width: 286px;
+	height: 286px;
+	padding: 10px;
 }
 
 .tituloCurso{
@@ -40,38 +76,7 @@
 .botonCompra:hover{
 	background-color: $bordeForm;
 }
-.product-item{
-	background-color: $texto;
-	border-radius: 8px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 
-.store-wrapper{
-	display: flex;
-	flex-wrap: wrap;
-}
 
-.category_list{
-	display: flex;
-	flex-direction: column;
-	width: 18%;
-}
 
-.category_list .category_item{
-	display: block;
-	width: 90%;
-	padding: 15px 0;
-	margin-bottom: 20px;
-	background: $footerColor;
-
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-
-.category_list .ct_item-active{
-	background: #e98e059c;
-}
 

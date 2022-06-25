@@ -58,6 +58,16 @@ ul {
   text-decoration: underline;
 }
 
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  font-size: 1.5rem;
+  display: none;
+}
+
 .seccion-primera {
   height: 550px;
   background: url(../img/impresion3d.jpeg) no-repeat center center/cover;
@@ -130,14 +140,14 @@ ul {
   border-radius: 20px;
 }
 
+.imgCard {
+  border-radius: 20px 20px 0 0;
+}
+
 .contenidoCard {
   background-color: #d6d3d3cc;
   padding: 10px;
   border-radius: 0 0 20px 20px;
-}
-
-.imgCard {
-  border-radius: 20px 20px 0 0;
 }
 
 .buttonCard {
@@ -151,6 +161,35 @@ ul {
 .buttonCard:hover {
   -webkit-box-shadow: 0 0 15px #d6d3d3cc, 0 0 15px #000000;
           box-shadow: 0 0 15px #d6d3d3cc, 0 0 15px #000000;
+}
+
+.tiposDeImpresoras2 {
+  background: url(../img/tipodeimpresora.jpeg) no-repeat center center/cover;
+  height: 250px;
+  margin: 5px 0px 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 5px;
+}
+
+.tiposDeImpresorasDiv {
+  margin-bottom: 50px;
+}
+
+.textoImpresoras {
+  background-color: #000000;
+  display: inline;
+}
+
+.textoImpresorasP {
+  background-color: #000000;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .carrousel {
@@ -180,12 +219,15 @@ ul {
   color: #f5b33a;
 }
 
-.piezaFilamento {
-  height: 287px;
-  padding: 20px;
+.tituloPiezas {
+  text-align: center;
 }
 
-.tituloPiezas {
+.piezaFilamento {
+  height: 287px;
+}
+
+.tituloPiezas3 {
   text-align: center;
 }
 
@@ -193,32 +235,73 @@ ul {
   text-align: center;
 }
 
-.tituloPiezas3 {
-  text-align: center;
+.tienda {
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
 }
 
-.carousel {
-  margin: 30px 0px;
+.tiendaCurso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.listaCategoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 18%;
+}
+
+.listaCategoria .listaCursos {
+  display: block;
+  width: 90%;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background: #2b2c2c;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.listaCategoria .ct_item-active {
+  background: #e98e059c;
+}
+
+.listaProductos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 285px 285px 285px;
+      grid-template-columns: 285px 285px 285px;
+  gap: 10px;
+}
+
+.tipoCurso {
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .imgCursos {
   width: 286px;
   height: 286px;
   padding: 10px;
-}
-
-.wrap {
-  max-width: 1100px;
-  width: 90%;
-  margin: auto;
-}
-
-.products-list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 285px 285px 285px;
-      grid-template-columns: 285px 285px 285px;
-  gap: 16px;
 }
 
 .tituloCurso {
@@ -247,55 +330,6 @@ ul {
   background-color: #ccc;
 }
 
-.product-item {
-  background-color: #ffffff;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.store-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.category_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 18%;
-}
-
-.category_list .category_item {
-  display: block;
-  width: 90%;
-  padding: 15px 0;
-  margin-bottom: 20px;
-  background: #2b2c2c;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-}
-
-.category_list .ct_item-active {
-  background: #e98e059c;
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,11 +349,6 @@ ul {
 .footerTexto {
   text-align: center;
   margin-bottom: 20px;
-}
-
-.media {
-  font-size: 50px;
-  margin: auto;
 }
 
 .copy {
@@ -451,20 +480,28 @@ ul {
   place-items: center;
 }
 
-.texto {
-  text-align: justify;
-  margin-right: 10px;
-  margin-left: 20px;
-}
-
 .textoImpresion3d {
   text-align: justify;
   margin: 0px 10px 50px 20px;
 }
 
-.nav ul.nav-menu.show {
-  -webkit-transform: translateX(-5px);
-          transform: translateX(-5px);
+.tiposDeImpresoras {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.texto {
+  text-align: justify;
+  margin-right: 10px;
+  margin-left: 20px;
 }
 
 .tipos3ds {
@@ -481,112 +518,44 @@ ul {
   margin-bottom: 50px;
 }
 
-.tiposDeImpresoras {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.tipos-de-impresoras {
-  background: url(../img/tipodeimpresora.jpeg) no-repeat center center/cover;
-  height: 250px;
-  margin: 5px 0px 5px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-left: 5px;
-}
-
-.tipos-de-impresoras__div {
-  margin-bottom: 50px;
-}
-
-.texto-impresoras {
-  background-color: #000000;
-  display: inline;
-}
-
-.texto-impresoras__p {
-  background-color: #000000;
-}
-
-.buttonCard {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 5px 12px;
-  border-radius: 10px;
-  background-color: #000000;
-}
-
-.container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.logo {
-  text-align: center;
-  font-size: 3em;
-}
-
-.logo span {
-  color: #B70E21;
-}
-
-.contact-wrapper {
+.contenidoFormulario {
   -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
           box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
-.contact-wrapper > * {
+.contenidoFormulario > * {
   padding: 1em;
 }
 
-.contact-form {
+.formularioContacto {
   background: #222222;
 }
 
-.contact-form form {
+.formularioContacto form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-.contact-form form label {
+.formularioContacto form label {
   display: block;
 }
 
-.contact-form form p {
+.formularioContacto form p {
   margin: 0;
   padding: 1em;
 }
 
-.contact-form form .block {
+.formularioContacto form .block {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / 3;
 }
 
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea {
+.formularioContacto form button,
+.formularioContacto form input,
+.formularioContacto form textarea {
   width: 100%;
   padding: .7em;
   border: none;
@@ -596,15 +565,15 @@ ul {
   border-bottom: 1px solid #e48e0d;
 }
 
-.contact-form form button {
+.formularioContacto form button {
   background: #e48e0d;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
 }
 
-.contact-form form button:hover,
-.contact-form form button:focus {
+.formularioContacto form button:hover,
+.formularioContacto form button:focus {
   background: #f5b33a;
   color: #fff;
   -webkit-transition: background-color 1s ease-out;
@@ -612,7 +581,7 @@ ul {
   outline: 0;
 }
 
-.contact-info {
+.informacionContacto {
   background: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,7 +595,7 @@ ul {
           justify-content: space-evenly;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.informacionContacto h4, .informacionContacto ul, .informacionContacto p {
   text-align: center;
   margin: 0 0 1rem 0;
 }
@@ -643,16 +612,6 @@ h1 {
 
 h2 {
   margin-bottom: 10px;
-}
-
-.menu-btn {
-  position: absolute;
-  cursor: pointer;
-  top: 15px;
-  right: 30px;
-  z-index: 2;
-  font-size: 1.5rem;
-  display: none;
 }
 
 body {
@@ -672,28 +631,23 @@ body {
     padding: 10px;
     margin: 0px auto;
   }
-  .imagencita {
-    text-align: center;
-  }
   .contenedorImpresion3d {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .botonFiltro {
-    display: none;
+  .listaProductos {
+    -ms-grid-columns: 285px 285px;
+        grid-template-columns: 285px 285px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .products-list .product-item {
+  .tipoCurso .listaProductos {
     width: 30.3%;
   }
 }
 
 @media (max-width: 992px) {
-  .imagencita {
-    text-align: center;
-  }
   .parrafoPiezas {
     padding: 10px;
     text-align: center;
@@ -702,9 +656,6 @@ body {
   .contenedorImpresion3d {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-  }
-  .cardPosition {
-    margin-bottom: 10px;
   }
   .tarjetasIndex {
     -ms-grid-columns: 221px 221px;
@@ -721,11 +672,11 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .category_list,
-  .products-list {
+  .listaCategoria,
+  .listaProductos {
     width: 100%;
   }
-  .category_list {
+  .listaCategoria {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -734,20 +685,29 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .category_list .category_item {
+  .listaCategoria .listaCursos {
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 15%;
     font-size: 14px;
   }
-  .products-list .product-item {
+  .listaProductos .tipoCurso {
     margin-left: 4.5%;
   }
-  .products-list .product-item:nth-child(3n+1) {
-    margin-left: 0px;
+  .listaProductos {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 270px 270px;
+        grid-template-columns: 270px 270px;
   }
-  .cardPosition {
-    margin-bottom: 10px;
+  .imgCursos {
+    width: 260px;
+    height: 260px;
+    padding: 10px;
   }
 }
 
@@ -788,17 +748,6 @@ body {
     width: 95%;
     text-align: justify;
   }
-  .video-youtube {
-    width: 500px;
-    height: 300px;
-  }
-  .form {
-    margin: auto;
-    width: 600px;
-  }
-  .cardPosition {
-    margin-bottom: 10px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -808,58 +757,59 @@ body {
   .btn-search {
     margin: 5px 60px;
   }
-  .imagencita {
-    text-align: center;
-  }
   .parrafoPiezas {
     padding: 10px;
     text-align: center;
     line-height: 2;
     margin-left: 60px;
   }
-  .cardPosition {
-    margin-bottom: 10px;
+  .carrousel {
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .category_list {
+  .listaCategoria {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .category_list .category_item {
+  .listaCategoria .listaCursos {
     width: 100%;
     margin-bottom: 10px;
   }
-  .cardPosition {
-    margin-bottom: 10px;
+  .listaProductos {
+    -ms-grid-columns: 285px;
+        grid-template-columns: 285px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media (min-width: 700px) {
-  .contact-wrapper {
+  .contenidoFormulario {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
   }
-  .contact-wrapper > * {
+  .contenidoFormulario > * {
     padding: 2em;
   }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
+  .informacionContacto h4,
+  .informacionContacto ul,
+  .informacionContacto p {
     text-align: center;
   }
-  .content {
+  .formulario {
     max-width: 1100px;
     width: 90%;
     margin: auto;
-  }
-  .cardPosition {
-    margin-bottom: 10px;
   }
 }
 
@@ -870,26 +820,14 @@ body {
   .btn-search {
     margin: 5px 60px;
   }
-  .form {
-    width: 100vw;
-  }
-  .products-list .product-item {
+  .listaProductos .listaCursos {
     width: 47.5%;
   }
-  .products-list .product-item:nth-child(3n+1) {
+  .listaProductos .tipoCurso:nth-child(3n+1) {
     margin-left: 4.5%;
   }
-  .products-list .product-item:nth-child(2n+1) {
-    margin-left: 0px;
-  }
-  .cardPosition {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 574px) {
-  .cardPosition {
-    margin-left: 140px;
+  .carrousel {
+    width: 100%;
   }
 }
 
@@ -921,13 +859,6 @@ body {
   .btn-search {
     margin: 5px 60px;
   }
-  .cardPosition {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: auto;
-    margin-bottom: 10px;
-  }
   .contenedorImpresion3d {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -937,23 +868,8 @@ body {
     padding: 15px;
     text-align: justify;
   }
-  .video-youtube {
-    width: 300px;
-    height: 300px;
-  }
-  .imgCarrousel {
-    width: 300px;
-    height: 300px;
-  }
   .footer {
     margin-top: 30px;
-  }
-  .form {
-    margin: auto;
-    width: 400px;
-  }
-  .imagencita {
-    text-align: center;
   }
   .tituloPiezas {
     margin: 50px 0 0 10px;
@@ -972,6 +888,9 @@ body {
         -ms-flex-align: space-evenly;
             align-items: space-evenly;
     margin: 10px 0;
+  }
+  .carrousel {
+    width: 70%;
   }
 }
 
@@ -994,17 +913,8 @@ body {
     height: 400px;
     width: 400px;
   }
-  .botonForm {
-    margin-bottom: 20px;
-  }
-  .imagencita {
-    text-align: center;
-  }
   .footer {
     margin-top: 30px;
-  }
-  .cardPosition {
-    margin-bottom: 10px;
   }
 }
 
@@ -1015,9 +925,6 @@ body {
   .btn-search {
     margin: 5px 60px;
   }
-  .imagencita {
-    text-align: center;
-  }
   .piezaFilamento {
     width: 295px;
     height: 144px;
@@ -1027,9 +934,6 @@ body {
     text-align: center;
     line-height: 2;
     margin-left: 35px;
-  }
-  .cardPosition {
-    margin-bottom: 10px;
   }
 }
 
@@ -1052,9 +956,6 @@ body {
   .piezasImpresas {
     margin-top: 20px;
   }
-  .imagencita {
-    text-align: center;
-  }
   .piezaFilamento {
     width: 295px;
     height: 144px;
@@ -1065,28 +966,8 @@ body {
     line-height: 2;
     margin-left: 30px;
   }
-  .imgCarrousel {
-    height: 200px;
-    width: 200px;
-  }
   .footer {
     margin-top: 30px;
-  }
-  .form {
-    width: 320px;
-  }
-  .botonForm {
-    margin-right: 90px;
-  }
-  .cardPosition {
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .products-list .product_item {
-    width: 100%;
-    margin-left: 0px;
   }
 }
 
@@ -1096,12 +977,6 @@ body {
   }
   .btn-search {
     margin: 5px 60px;
-  }
-  .form {
-    width: 300px;
-  }
-  .botonForm {
-    margin: 20px;
   }
   .piezaFilamento {
     width: 294px;
@@ -1116,9 +991,6 @@ body {
   }
   .footer {
     margin-top: 30px;
-  }
-  .cardPosition {
-    margin-bottom: 10px;
   }
 }
 
@@ -1152,8 +1024,8 @@ input[type=number] {
   padding: 20px;
   width: 700px;
   background: #ffffff;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px #000000;
+          box-shadow: 0 5px 10px #000000;
 }
 
 .container form .row {

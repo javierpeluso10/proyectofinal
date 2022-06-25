@@ -14,7 +14,6 @@
     line-height: 2;
 }
 
-
 .linkForm{
     text-decoration: underline;
     color: $formColor;
@@ -24,22 +23,18 @@
     color: $formHover;
 }
 
-.piezaFilamento{
-    height: 287px;
-    padding: 20px;
-}
-
 .tituloPiezas{
     text-align: center;
+}
 
+.piezaFilamento{
+    height: 287px;
 }
-.tituloPiezas2{
-    text-align: center;
-}
+
 .tituloPiezas3{
     text-align: center;
 }
 
-.carousel{
-    margin: 30px 0px;
+.tituloPiezas2{
+    text-align: center;
 }

@@ -58,6 +58,11 @@ ul {
   text-decoration: underline;
 }
 
+.nav ul.navMenu.show {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
 .menuBtn {
   position: absolute;
   cursor: pointer;
@@ -109,15 +114,19 @@ ul {
 
 @-webkit-keyframes pulsate {
   0% {
-    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
-            box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    -webkit-box-shadow: 0 0 25px #5ddcff,
+ 0 0 50px #4e00c2;
+            box-shadow: 0 0 25px #5ddcff,
+ 0 0 50px #4e00c2;
   }
 }
 
 @keyframes pulsate {
   0% {
-    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
-            box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    -webkit-box-shadow: 0 0 25px #5ddcff,
+ 0 0 50px #4e00c2;
+            box-shadow: 0 0 25px #5ddcff,
+ 0 0 50px #4e00c2;
   }
 }
 
@@ -399,8 +408,10 @@ ul {
   color: #fff;
   border-radius: 50%;
   outline: 2px solid #fff;
-  -webkit-transition-property: outline-offset, outline-color, background-color;
-  transition-property: outline-offset, outline-color, background-color;
+  -webkit-transition-property: outline-offset, outline-color,
+ background-color;
+  transition-property: outline-offset, outline-color,
+ background-color;
   -webkit-transition-duration: .25s;
           transition-duration: .25s;
 }

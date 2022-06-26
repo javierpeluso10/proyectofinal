@@ -1,3 +1,10 @@
+// BOTON RESPONSIVE NAVBAR
+
+document.querySelector('.menuBtn').addEventListener('click',() => {
+    document.querySelector('.navMenu').classList.toggle('show');
+});
+
+
 $(document).ready(function(){
 
 	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE

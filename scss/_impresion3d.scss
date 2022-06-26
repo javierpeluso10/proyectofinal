@@ -9,25 +9,46 @@
     margin: 0px 10px 50px 20px;
 }
 
-.tiposDeImpresoras{
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
+.videoYoutube{
+    width: 400px;
+    height: 300px;
 }
-
-.texto{
-    text-align: justify;
-    margin-right: 10px;
-    margin-left: 20px;
-}
-
-.tipos3ds{
-    width: 250px;
-    height: 250px;
-}
-.contenedorFotos{
+.impresoraResina{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    flex-direction: column;
+    width: 80%;
+    text-align: justify;
+}
+
+.impresion3D{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tituloImpresoraResina{
+    font-size: 3.6rem;
+    font-weight: bolder;
+}
+
+.carrouselTiposDeImpresoras{
+    margin: auto 0 ;
+}
+
+.caracteristicasImpresoras{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.caracteristicasImpresorasParrafo{
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.impresoraFdm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    text-align: justify;
 }

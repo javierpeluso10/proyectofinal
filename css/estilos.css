@@ -109,19 +109,15 @@ ul {
 
 @-webkit-keyframes pulsate {
   0% {
-    -webkit-box-shadow: 0 0 25px #5ddcff,
- 0 0 50px #4e00c2;
-            box-shadow: 0 0 25px #5ddcff,
- 0 0 50px #4e00c2;
+    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+            box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
   }
 }
 
 @keyframes pulsate {
   0% {
-    -webkit-box-shadow: 0 0 25px #5ddcff,
- 0 0 50px #4e00c2;
-            box-shadow: 0 0 25px #5ddcff,
- 0 0 50px #4e00c2;
+    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+            box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
   }
 }
 
@@ -403,10 +399,8 @@ ul {
   color: #fff;
   border-radius: 50%;
   outline: 2px solid #fff;
-  -webkit-transition-property: outline-offset, outline-color,
- background-color;
-  transition-property: outline-offset, outline-color,
- background-color;
+  -webkit-transition-property: outline-offset, outline-color, background-color;
+  transition-property: outline-offset, outline-color, background-color;
   -webkit-transition-duration: .25s;
           transition-duration: .25s;
 }
@@ -491,42 +485,63 @@ ul {
   margin: 0px 10px 50px 20px;
 }
 
-.tiposDeImpresoras {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.videoYoutube {
+  width: 400px;
+  height: 300px;
 }
 
-.texto {
-  text-align: justify;
-  margin-right: 10px;
-  margin-left: 20px;
-}
-
-.nav ul.navMenu.show {
-  -webkit-transform: translateX(-5px);
-          transform: translateX(-5px);
-}
-
-.tipos3ds {
-  width: 250px;
-  height: 250px;
-}
-
-.contenedorFotos {
+.impresoraResina {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  text-align: justify;
+}
+
+.impresion3D {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.tituloImpresoraResina {
+  font-size: 3.6rem;
+  font-weight: bolder;
+}
+
+.carrouselTiposDeImpresoras {
+  margin: auto 0;
+}
+
+.caracteristicasImpresoras {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.caracteristicasImpresorasParrafo {
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.impresoraFdm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  text-align: justify;
 }
 
 .contenidoFormulario {
@@ -650,11 +665,35 @@ body {
     -ms-grid-columns: 285px 285px;
         grid-template-columns: 285px 285px;
   }
+  .textoImpresion3d {
+    text-align: justify;
+    margin: 0px 10px 40px 20px;
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
   .tipoCurso .listaProductos {
     width: 30.3%;
+  }
+  .contenedorImpresion3d {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .impresion3D {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .impresoraFdm {
+    margin: auto;
+  }
+  .impresoraResina {
+    margin: auto;
   }
 }
 
@@ -839,6 +878,9 @@ body {
   .carrousel {
     width: 100%;
   }
+  .tituloImpresoraResina {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 528px) {
@@ -945,6 +987,13 @@ body {
     line-height: 2;
     margin-left: 35px;
   }
+  .tituloImpresoraResina {
+    font-size: 2.5rem;
+  }
+  .videoYoutube {
+    width: 300px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -978,6 +1027,12 @@ body {
   }
   .footer {
     margin-top: 30px;
+  }
+  .tituloImpresoraResina {
+    font-size: 2rem;
+  }
+  .caracteristicasImpresoras {
+    font-size: 1.3rem;
   }
 }
 

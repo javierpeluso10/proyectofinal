@@ -27,66 +27,73 @@
     <title>Pago - White Fusion 3D</title>
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <div class="row">
-                <div class="col">
-                    <h3 class="title">Direccion de Facturacion</h3>
+    <main>
+<!--INICIO FORMULARIO DE PAGO-->
+        <!--INICIO COLUMNA DATOS PERSONALES-->
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="title">Direccion de Facturacion</h3>
+                        <div class="inputBox">
+                            <span class="span">Nombre Completo :</span>
+                            <input type="text" placeholder="Nombre y Apellido">
+                        </div>
                     <div class="inputBox">
-                        <span class="span">Nombre Completo :</span>
+                        <span class="span">Email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span class="span">Direccion :</span>
+                        <input type="text" placeholder="Direccion">
+                    </div>
+                    <div class="inputBox">
+                        <span class="span">Ciudad :</span>
+                        <input type="text" placeholder="CABA">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span class="span">Provincia :</span>
+                            <input type="text" placeholder="Buenos Aires">
+                        </div>
+                        <div class="inputBox">
+                            <span class="span">Codigo Postal :</span>
+                            <input type="text" placeholder="XXXX">
+                        </div>
+                    </div>
+                    </div>
+        <!--FIN COLUMNA DE DATOS PERSONALES-->
+        <!--INICIO COLUMNA METODOS DE PAGO-->
+                <div class="col">
+                    <h3 class="title">Metodo de Pago</h3>
+                    <div class="inputBox">
+                        <span class="span">Tarjetas Aceptadas :</span>
+                        <img src="../img/pago/card_img.png" alt="tarjetasAceptadas" title="Paypal MasterCard Amex Visa">
+                    </div>
+                    <div class="inputBox">
+                        <span class="span">Nombre del titular :</span>
                         <input type="text" placeholder="Nombre y Apellido">
                     </div>
-                <div class="inputBox">
-                    <span class="span">Email :</span>
-                    <input type="email" placeholder="example@example.com">
-                </div>
-                <div class="inputBox">
-                    <span class="span">Direccion :</span>
-                    <input type="text" placeholder="Direccion">
-                </div>
-                <div class="inputBox">
-                    <span class="span">Ciudad :</span>
-                    <input type="text" placeholder="CABA">
-                </div>
-                <div class="flex">
                     <div class="inputBox">
-                        <span class="span">Provincia :</span>
-                        <input type="text" placeholder="Buenos Aires">
+                        <span class="span">Numero de Tarjeta :</span>
+                        <input type="number" placeholder="XXXX-XXXX-XXXX-XXXX">
                     </div>
                     <div class="inputBox">
-                        <span class="span">Codigo Postal :</span>
-                        <input type="text" placeholder="XXXX">
+                        <span class="span">Vencimiento :</span>
+                        <input type="text" placeholder="XX/XX">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span class="span">Codigo de Seguridad :</span>
+                            <input type="text" placeholder="XXX">
+                        </div>
                     </div>
                 </div>
+        <!--FIN COLUMNA METODOS DE PAGO-->
                 </div>
-            <div class="col">
-                <h3 class="title">Metodo de Pago</h3>
-                <div class="inputBox">
-                    <span class="span">Tarjetas Aceptadas :</span>
-                    <img src="../img/pago/card_img.png" alt="">
-                </div>
-                <div class="inputBox">
-                    <span class="span">Nombre del titular :</span>
-                    <input type="text" placeholder="Nombre y Apellido">
-                </div>
-                <div class="inputBox">
-                    <span class="span">Numero de Tarjeta :</span>
-                    <input type="number" placeholder="XXXX-XXXX-XXXX-XXXX">
-                </div>
-                <div class="inputBox">
-                    <span class="span">Vencimiento :</span>
-                    <input type="text" placeholder="XX/XX">
-                </div>
-                <div class="flex">
-                    <div class="inputBox">
-                        <span class="span">Codigo de Seguridad :</span>
-                        <input type="text" placeholder="XXX">
-                    </div>
-                </div>
-            </div>
-            </div>
-            <a href="../pages/cursos.html"><input type="button" value="Proceder al Pago" class="submit-btn"></a> 
-        </form>
-    </div>    
+                <a href="../pages/cursos.html"><input type="button" value="Proceder al Pago" class="submit-btn"></a> 
+            </form>
+        </div>    
+    </main>
 </body>
 </html>

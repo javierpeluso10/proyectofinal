@@ -1,8 +1,8 @@
 //PRIMERA SECCION
 
-.seccion-primera{
+.seccionPrimera{
     height: 550px;
-    background: url(../img/impresion3d.jpeg) no-repeat center center/cover;
+    background: url(../img/home/impresion3d.jpeg) no-repeat center center/cover;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     margin: 5px 0px 5px 0px;
 }
 
-.text-color{
+.textColor{
     background-color: $negro;
     text-align: center;
 }
@@ -77,7 +77,7 @@
 // ULTIMA SECCION 
 
 .tiposDeImpresoras2{
-    background:url(../img/tipodeimpresora.jpeg) no-repeat center center/cover;
+    background:url(../img/home/tipodeimpresora.jpeg) no-repeat center center/cover;
     height: 250px;
     margin:5px 0px 5px 0px;
     display: flex;

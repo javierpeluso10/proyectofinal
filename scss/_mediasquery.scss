@@ -1,4 +1,10 @@
 /*MEDIAS QUERY*/
+@media (max-width: 1400px){
+    .botonBusqueda{
+        left:73%;
+        top: 1%;
+    }
+}
 @media (max-width: 1200px){
     .piezaFilamento{
         width: 442px;
@@ -17,6 +23,16 @@
         margin: 0px 10px 40px 20px;
         padding: 20px;
     }
+    .botonBusqueda{
+        left:76%;
+        top: 1%;
+    }
+    .botonBusqueda:hover .inputBusqueda{
+        width: 250px;
+        background: #272133;
+        border-radius: 10px;
+    }
+
 }
 @media screen and (max-width: 1100px){
 	.tipoCurso .listaProductos{
@@ -37,6 +53,9 @@
     .impresoraResina{
         margin: auto;
     }
+    .botonBusqueda{
+        display: none;
+    }
 }
 
 @media (max-width: 992px){
@@ -53,8 +72,7 @@
         justify-content: space-evenly;
         align-items: space-evenly;
         margin: 10px 0;
-        gap:20px
-        
+        gap:20px   
     }
 }
 
@@ -89,7 +107,7 @@
         height: 260px;
         padding: 10px;
     }
-    
+
 }
 
 @media (max-width: 865px) {
@@ -107,7 +125,7 @@
         transition: transform .5s ease-in-out;
     }
     .logo{
-        margin-top: -15px;
+        margin-top: 8px;
     }
     .menuBtn{
         margin: 5px;
@@ -125,12 +143,6 @@
     }
 }  
 @media (max-width: 768px){
-    .menuBtn{
-        margin: 5px;
-    }
-    .btn-search{
-        margin: 5px 60px;
-    }
     .parrafoPiezas{
         padding: 10px;
         text-align: center;
@@ -155,7 +167,7 @@
         align-items: center;
         justify-content: center;
     }
-    }
+}
 @media(min-width: 700px) {
     .contenidoFormulario {
         display: grid;
@@ -176,12 +188,6 @@
     }
 }
 @media (max-width: 600px){
-    .menuBtn{
-        margin: 5px;
-    }
-    .btn-search{
-        margin: 5px 60px;
-    }
     .listaProductos .listaCursos{
 		width: 47.5%;
 	}
@@ -199,26 +205,8 @@
 
 @media (max-width: 528px) {
     .nav ul.navMenu{
-        display:block;
-        position: absolute;
-        top:0;
-        left: 0;
-        height: 100%;
         transform: translateX(-250px); /*-25*/
         padding: 20px;
-        opacity: .9;
-        background-color: #4d4c4c;
-        z-index: 3;
-        transition: transform .5s ease-in-out;
-    }
-    .logo{
-        margin-top: -20px;
-    }
-    .menuBtn{
-        margin: 5px;
-    }
-    .btn-search{
-        margin: 5px 60px;
     }
     .contenedorImpresion3d{
         grid-template-columns: 1fr;
@@ -249,12 +237,6 @@
 } 
 
 @media (max-width: 515px){
-    .menuBtn{
-        margin: 5px;
-    }
-    .btn-search{
-        margin: 5px 60px;
-    }
     .contenedorFotos{
         display: grid;
         grid-template-columns: 1fr;
@@ -265,18 +247,9 @@
         height: 400px;
         width: 400px;
     }
-    .footer{
-        margin-top: 30px;
-    }
 }
 
 @media (max-width: 454px){
-    .menuBtn{
-        margin: 5px;
-    }
-    .btn-search{
-        margin: 5px 60px;
-    }
     .piezaFilamento{
         width: 295px;
         height: 144px;
@@ -298,12 +271,6 @@
 
 
 @media (max-width: 390px){
-    .menuBtn{
-        margin: 5px;
-    }
-    .btn-search{
-        margin: 5px 60px;
-    }
     .texto{
         width: 320px;
         margin: auto;
@@ -315,16 +282,8 @@
     }
     .piezasImpresas{
         margin-top: 20px;
-        
-    }
-    .piezaFilamento{
-        width: 295px;
-        height: 144px;
     }
     .parrafoPiezas{
-        padding: 10px;
-        text-align: center;
-        line-height: 2;
         margin-left: 30px;
     }
     .footer{
@@ -335,30 +294,5 @@
     }
     .caracteristicasImpresoras{
         font-size: 1.3rem;
-    }
-}
-@media screen and (max-width: 350px){
-
-}
-@media (max-width: 320px){
-    .menuBtn{
-        margin: 5px;
-    }
-    .btn-search{
-        margin: 5px 60px;
-    }
-    .piezaFilamento{
-        width: 294px;
-        height: 144px;
-        margin: 0;
-    }
-    .parrafoPiezas{
-        padding: 10px;
-        text-align: center;
-        line-height: 2;
-        margin-left: 30px;
-    }
-    .footer{
-        margin-top: 30px;
     }
 }
